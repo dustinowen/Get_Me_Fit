@@ -17,7 +17,6 @@
 
   <tbody>
     <% cardioList.forEach(cardio => { %>
-      <% if ( JSON.stringify(f.user) === JSON.stringify(user._id) ) { %>
     <tr>
       <td><%= cardio.activity %></td>
       <td><%= cardio.duration %> minutes</td>
@@ -30,8 +29,7 @@
         </button> 
       </form>
     </tr>
-    <% } else {} %>
-    <% })%>
+    <% }) %>
   </tbody>
   
 </table>
